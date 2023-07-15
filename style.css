@@ -1,12 +1,50 @@
 * {
     margin: 0px;
     box-sizing: border-box;
+    list-style: none;
+    font-family: 'Chakra Petch', sans-serif;
+    text-decoration: none;
+}
+
+.nav {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+nav {
+    width: 50%;
+    height: 6rem;
+    border-radius: 0px 0px 50px 50px;
+    background: linear-gradient(341deg, rgba(126, 161, 206, 1) 17%, rgba(150, 208, 255, 1) 52%, rgba(126, 161, 206, 1) 80%);
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+nav ul li a{
+    font-size: 30px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 1px 1px 20px white;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.741);
+}
+nav ul li a:hover{
+    text-shadow: 3px 3px 20px white;
+    color: black;
+    font-size: 35px;
+    transition: linear 1s;
 }
 
 .content {
+    padding: 5rem;
     width: 100%;
     height: auto;
-    animation: changeBackgroundColor 5s infinite;
+    animation: changeBackgroundColor 8s infinite;
+    position: relative;
 }
 
 
@@ -32,10 +70,11 @@
     background-size: cover;
     border-radius: 50%;
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    animation: changeBorderColor 2s infinite;
+    animation: changeBorderColor 6s infinite;
 }
-.circle:hover{
-    animation: changeBorderColor 0s ;
+
+.circle:hover {
+    animation: changeBorderColor 0s;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
@@ -62,14 +101,14 @@
 }
 
 .links i a {
-    
+
     font-size: 25px;
     text-decoration: none;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    animation:changeTextColor 4s infinite;
+    animation: changeTextColor 7s infinite;
 }
 
 .links i a:hover {
@@ -78,13 +117,15 @@
 }
 
 @keyframes changeTextColor {
-    0%{
+    0% {
         background-color: rgb(36, 66, 100);
     }
-    50%{
+
+    50% {
         background-color: rgb(255, 255, 255);
     }
-    100%{
+
+    100% {
         background-color: rgb(36, 66, 100);
     }
 }
