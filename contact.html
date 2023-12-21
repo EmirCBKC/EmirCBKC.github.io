@@ -29,11 +29,31 @@
         </nav>
     </div>
 
-    <div class="content">
+    <div class="content-contact">
         <div class="row p-5 justify-content-around">
-            <div class="mt-4 col-xxl-12 col-xl-12 col-lg-12">
-                <div class="blog d-flex flex-column p-5">
-                    <h1 class="text-center mt-4">Çok yakında...</h1>
+            <div class="mt-4 d-flex justify-content-center align-items-center col-xxl-12 col-xl-12 col-lg-12">
+                <div class="blog-contact d-flex flex-column p-5">
+                    <h1 class="text-center mt-4">Bana Ulaş</h1>
+                    <div class="container">
+                        <form id="contact" action="" method="post">
+                            <fieldset>
+                                <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                            </fieldset>
+                            <fieldset>
+                                <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                            </fieldset>
+                            <fieldset>
+                                <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+                            </fieldset>
+                            <fieldset>
+                                <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+                            </fieldset>
+                            <fieldset class="d-flex justify-content-end">
+                                <button name="submit" type="submit" id="contact-submit"
+                                    data-submit="...Sending">Submit</button>
+                            </fieldset>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
