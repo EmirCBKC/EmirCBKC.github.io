@@ -381,3 +381,10 @@ fieldset {
 :-ms-input-placeholder {
     color: #888;
 }
+
+.recommended {
+    border-radius: 20px 20px 20px 20px;
+    width: 90%;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.575);
+}
