@@ -49,6 +49,7 @@ nav ul li a:hover {
     width: 100%;
     height: auto;
     position: relative;
+    margin-top: 5rem;
 }
 
 .content-project {
@@ -386,4 +387,100 @@ fieldset {
     width: 90%;
     height: 80px;
     background-color: rgba(0, 0, 0, 0.575);
+}
+
+.skills {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/************************************************* - RESPONSIVE - *************************************************************/
+
+@media only screen and (max-width: 1843px) {
+    nav {
+        width: 60%;
+        height: 6rem;
+    }
+}
+
+@media only screen and (max-width: 1546px) {
+    nav {
+        width: 70%;
+        height: 6rem;
+    }
+}
+
+@media only screen and (max-width: 1322px) {
+    nav {
+        width: 85%;
+        height: 6rem;
+    }
+}
+
+.bar {
+    color: black;
+    font-size: 50px;
+    display: none;
+}
+
+.center {
+    justify-content: center;
+}
+
+@media only screen and (max-width: 1120px) {
+
+    .bar {
+        display: block;
+        margin-right: 4rem;
+    }
+
+    .me {
+        margin-left: 10rem;
+    }
+
+    .secret {
+        display: none;
+    }
+
+    .center {
+        justify-content: space-between !important;
+    }
+}
+
+@media only screen and (max-width: 715px) {
+    .content {
+        padding: 2rem;
+        margin-top: 5rem !important;
+    }
+}
+
+@media only screen and (max-width: 553px) {
+    footer ul li p {
+        font-size: 16px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        text-shadow: 1px 1px 20px white;
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.741);
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .circle {
+        width: 14rem;
+        height: 14rem;
+    }
+}
+
+@media only screen and (max-width: 363px) {
+    footer ul li p {
+        font-size: 12px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        text-shadow: 1px 1px 20px white;
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.741);
+    }
 }
